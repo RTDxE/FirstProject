@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b19648668e6da38419df8b4b57b4c5bd, type: 3}
   m_Name: playerData
   m_EditorClassIdentifier: 
-  position: {x: 0, y: 0, z: 0}
+  position: {x: -1.77, y: 2.21, z: 0}
+  hp: 0
+  moveSpeed: 0
+  isEnemy: 0
