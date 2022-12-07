@@ -9,7 +9,7 @@ public class EnemyDamager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.attachedRigidbody != null && other.attachedRigidbody.TryGetComponent<Enemy>(out var enemy))
+        if (!other.isTrigger && other.attachedRigidbody != null && other.attachedRigidbody.TryGetComponent<Enemy>(out var enemy))
         {
             enemy.Damage(0);
             onDamaged.Invoke();
